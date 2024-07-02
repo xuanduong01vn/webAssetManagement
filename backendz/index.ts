@@ -1,12 +1,13 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 import express from 'express';
 import bodyParse from 'body-parser';
 import cors from 'cors';
 import morgan from 'morgan';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import 'donet/config';
+import dotenv from 'dotenv';
 
+dotenv.config();
 
 const app =express();
 const port =9900;
